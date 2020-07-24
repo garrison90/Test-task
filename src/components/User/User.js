@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./User.css";
 
 function User({ user }) {
-  return <p>{`${user.firstName} ${user.lastName}`}</p>;
+  return <li className="user-item">{`${user.firstName} ${user.lastName}`}</li>;
 }
 
 User.propTypes = {

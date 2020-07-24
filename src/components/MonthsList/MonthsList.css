@@ -1,0 +1,9 @@
+.months-block {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  width: 250px;
+  font-size: 15px;
+  line-height: 15px;
+}

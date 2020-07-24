@@ -38,14 +38,16 @@ function Month({ month, users, index }) {
 
   return (
     <>
-      <div
+      <li
+        className={`month-item ${color ? `${color}` : ""}`}
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
-        className={`month-wrapper ${color ? `${color}` : ""}`}
       >
-        <p>{month}</p>
-      </div>
-      {isHovered ? <UsersList users={users} index={index} /> : null}
+        {month}
+        <div className="users-wrapper">
+          {isHovered ? <UsersList users={users} index={index} /> : null}
+        </div>
+      </li>
     </>
   );
 }

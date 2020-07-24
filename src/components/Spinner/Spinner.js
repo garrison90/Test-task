@@ -1,18 +1,13 @@
 import React from "react";
 import spinner from "./three-dots.svg";
+import "./Spinner.css";
 
 function Spinner() {
   return (
-    <div style={spinnerStyles}>
+    <div className="spinnerStyles">
       <img src={spinner} alt={spinner} />
     </div>
   );
 }
 
 export default Spinner;
-const spinnerStyles = {
-  display: "flex",
-  height: "400px",
-  justifyContent: "center",
-  alignSelf: "center",
-};

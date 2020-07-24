@@ -1,18 +1,30 @@
-.month-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1em;
-  height: 30px;
-  border-radius: 15px;
+.month-item {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
   color: white;
-  width: 250px;
 }
 
-.month-wrapper:hover {
+.month-item:hover {
+  background-color: #1ee;
+  border-bottom: 1px solid black;
   cursor: pointer;
-  transition: all ease-in-out;
-  border: 2px solid black;
+}
+
+.users-wrapper {
+  position: absolute;
+  list-style: none;
+  top: 0;
+  left: 250px;
+  width: 300px;
+  text-align: left;
+  margin-top: 30px;
+  padding: 0;
+  background-color: #fcf807;
+  margin-top: 0;
 }
 
 .red {

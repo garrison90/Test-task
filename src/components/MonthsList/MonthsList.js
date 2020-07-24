@@ -4,6 +4,7 @@ import Month from "../Month/Month";
 import axios from "axios";
 import Spinner from "../Spinner/Spinner";
 import Error from "../Error/Error";
+import "./MonthsList.css";
 
 function MonthsList() {
   const [users, setUsers] = useState([]);
@@ -35,11 +36,11 @@ function MonthsList() {
       {isLoading ? (
         <Spinner />
       ) : (
-        <div>
+        <ul className="months-block">
           {months.map((month, index) => (
             <Month index={index} key={index} month={month} users={users} />
           ))}
-        </div>
+        </ul>
       )}
     </>
   );
