@@ -10,7 +10,6 @@
 
 .month-item:hover {
   background-color: #1ee;
-  border-bottom: 1px solid black;
   cursor: pointer;
 }
 
@@ -23,7 +22,7 @@
   text-align: left;
   margin-top: 30px;
   padding: 0;
-  background-color: #fcf807;
+  background-color: #1ee;
   margin-top: 0;
 }
 
